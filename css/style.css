@@ -1,3 +1,15 @@
 body{
 	background-color: black;
 }
+.line{
+	width: 100px;
+	background-color: black;
+	height: 20px;
+}
+.line>.half{
+	width: 50px;
+	height: 20px;
+}
+#line{
+	background-color: black;
+}
