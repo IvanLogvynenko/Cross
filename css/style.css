@@ -1,21 +1,19 @@
 body{
-	background-color: black;
+	background-color: rgb(0, 0, 0);
 }
+
 .line{
-	width: 100px;
-	background-color: black;
-	height: 10px;
+	display: inline-block;
+	margin: 10px;
 }
-.line>.half{
-	width: 50px;
-	height: 10px;
-}
-#line{
-	background-color: black;
-}
-button{
-	display: block;
-    outline: none;
-    border: none;
+.line>div{
 	background-color: white;
+	width: 100px;
+	height: 20px;
+}
+#middle{
+	background-color: white;
+	display: block;
+	width: 200px;
+	height: 20px;
 }
