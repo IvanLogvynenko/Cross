@@ -1,19 +1,50 @@
-body{
+body {
 	background-color: rgb(0, 0, 0);
 }
 
-.line{
-	display: inline-block;
-	margin: 10px;
-}
-.line>div{
-	background-color: white;
+#middle, #line1, #line3 {
 	width: 100px;
-	height: 20px;
+	height: 10px;
+	position: relative;
 }
 #middle{
+	margin: 10px;
 	background-color: white;
-	display: block;
-	width: 200px;
-	height: 20px;
+	transition: 1s;
+}
+#line1, #line3 {
+	margin: 10px;
+}
+#line1>div, #line3>div {
+	position: absolute;
+	width: 50px;
+	height: 10px;
+	background-color: white;
+	transition: 1.5s;
+}
+#right_top, #right_bottom {
+	left: 50px;
+}
+
+#middle.active{
+	opacity: 0;
+	width: 60px;
+	height: 6px;
+	margin: 12px 30px;
+}
+#left_top.active{
+	transform: rotate(45deg);
+	margin: 15px;
+}
+#right_top.active{
+	transform: rotate(-45deg);
+	margin-top: 15px;
+}
+#left_bottom.active{
+	transform: rotate(-45deg);
+	margin: 15px;
+	margin-top: 10px;
+}#right_bottom.active{
+	transform: rotate(45deg);
+	margin-top: 10px;
 }
